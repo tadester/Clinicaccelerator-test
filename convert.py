@@ -1,17 +1,20 @@
+"""Turn the clinic scoreboard workbook into JSON that is easy to query."""
+
 import argparse
 import json
 import re
 import sys
-from zipfile import BadZipFile
 from datetime import date, datetime, time
 from pathlib import Path
+from zipfile import BadZipFile
 
 from openpyxl import load_workbook
 from openpyxl.cell.cell import MergedCell
-from openpyxl.utils.exceptions import InvalidFileException
 from openpyxl.utils import get_column_letter
+from openpyxl.utils.exceptions import InvalidFileException
 
 
+# The first seven rows are not weekly data. They describe each metric column.
 HEADER_ROWS = {
     "section": 1,
     "label": 2,
@@ -21,6 +24,8 @@ HEADER_ROWS = {
     "target_label": 6,
     "target": 7,
 }
+
+# Weekly values start right after the header block.
 DATA_START_ROW = 8
 
 
@@ -30,6 +35,7 @@ class ConvertError(Exception):
 
 
 def clean_text(value):
+    """Trim messy spreadsheet text while leaving numbers and dates alone."""
     if value is None:
         return None
 
@@ -41,6 +47,7 @@ def clean_text(value):
 
 
 def json_value(value):
+    """Convert Excel/Python values into values the JSON encoder can safely write."""
     if isinstance(value, datetime):
         return value.date().isoformat() if value.time() == time.min else value.isoformat()
 
@@ -51,6 +58,7 @@ def json_value(value):
 
 
 def make_id(text, col_letter):
+    """Build a stable key for a metric column."""
     text = clean_text(text) or f"column {col_letter}"
     slug = re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
     # The column letter avoids collisions for repeated labels like "Utilization".
@@ -58,6 +66,7 @@ def make_id(text, col_letter):
 
 
 def merged_lookup(sheet):
+    """Map every merged cell to the value shown in the top-left cell."""
     lookup = {}
     ranges = []
 
@@ -76,9 +85,12 @@ def merged_lookup(sheet):
 
 
 def read_cell(sheet, values_sheet, row, col, merge_values):
+    """Read one cell with its calculated value, and include the formula if it has one."""
     formula_cell = sheet.cell(row, col)
     value_cell = values_sheet.cell(row, col)
 
+    # openpyxl needs two workbook reads here:
+    # one for formulas, and one for the cached values saved by Excel.
     value = None if isinstance(value_cell, MergedCell) else value_cell.value
     formula = None if isinstance(formula_cell, MergedCell) else formula_cell.value
 
@@ -97,6 +109,7 @@ def read_cell(sheet, values_sheet, row, col, merge_values):
 
 
 def column_has_data(sheet, col):
+    """Check whether a column has any weekly values under the header rows."""
     for row in range(DATA_START_ROW, sheet.max_row + 1):
         if clean_text(sheet.cell(row, col).value) is not None:
             return True
@@ -104,6 +117,7 @@ def column_has_data(sheet, col):
 
 
 def build_columns(sheet, values_sheet, merge_values):
+    """Create the column map that explains what every spreadsheet column means."""
     columns = []
 
     for col in range(1, sheet.max_column + 1):
@@ -112,6 +126,7 @@ def build_columns(sheet, values_sheet, merge_values):
         label_text = label.get("value") if isinstance(label, dict) else label
         has_data = column_has_data(values_sheet, col)
 
+        # Column A is the week/date column. The rest are either metrics or spacers.
         if col == 1:
             kind = "date"
             metric_id = "week"
@@ -143,12 +158,14 @@ def build_columns(sheet, values_sheet, merge_values):
 
 
 def build_records(sheet, values_sheet, columns, merge_values):
+    """Turn each weekly row into a dictionary of metric values."""
     records = []
     metric_columns = [col for col in columns if col["kind"] == "metric"]
 
     for row in range(DATA_START_ROW, sheet.max_row + 1):
         week = read_cell(sheet, values_sheet, row, 1, merge_values)
         if week is None:
+            # Skip totally blank rows so the output only contains real weeks.
             continue
 
         values = {}
@@ -174,6 +191,7 @@ def build_records(sheet, values_sheet, columns, merge_values):
 
 
 def convert(input_path):
+    """Convert every worksheet in the workbook into the final JSON structure."""
     input_path = Path(input_path)
 
     if not input_path.exists():
@@ -183,7 +201,10 @@ def convert(input_path):
         raise ConvertError(f"Input path is not a file: {input_path}")
 
     try:
+        # The formula workbook keeps expressions like =AVERAGE(...).
         workbook = load_workbook(input_path, data_only=False)
+
+        # The values workbook keeps Excel's last calculated result for formulas.
         values_workbook = load_workbook(input_path, data_only=True)
     except (InvalidFileException, BadZipFile, OSError) as error:
         raise ConvertError(f"Could not read Excel workbook: {error}") from error
@@ -201,6 +222,7 @@ def convert(input_path):
         merge_values, ranges = merged_lookup(sheet)
         columns = build_columns(sheet, values_sheet, merge_values)
 
+        # Each sheet keeps its own column map and row records together.
         output["sheets"].append(
             {
                 "name": sheet.title,
@@ -220,6 +242,7 @@ def convert(input_path):
 
 
 def main():
+    """Handle command-line arguments and write the JSON file."""
     parser = argparse.ArgumentParser(description="Convert the clinic scoreboard spreadsheet to JSON.")
     parser.add_argument("input", nargs="?", default="Scoreboard Test.xlsx")
     parser.add_argument("output", nargs="?", default="output.json")
