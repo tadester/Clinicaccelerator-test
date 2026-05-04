@@ -1,11 +1,14 @@
 import argparse
 import json
 import re
+import sys
+from zipfile import BadZipFile
 from datetime import date, datetime, time
 from pathlib import Path
 
 from openpyxl import load_workbook
 from openpyxl.cell.cell import MergedCell
+from openpyxl.utils.exceptions import InvalidFileException
 from openpyxl.utils import get_column_letter
 
 
@@ -19,6 +22,10 @@ HEADER_ROWS = {
     "target": 7,
 }
 DATA_START_ROW = 8
+
+
+class ConvertError(Exception):
+    pass
 
 
 def clean_text(value):
@@ -161,8 +168,21 @@ def build_records(sheet, values_sheet, columns, merge_values):
 
 def convert(input_path):
     input_path = Path(input_path)
-    workbook = load_workbook(input_path, data_only=False)
-    values_workbook = load_workbook(input_path, data_only=True)
+
+    if not input_path.exists():
+        raise ConvertError(f"Input file was not found: {input_path}")
+
+    if not input_path.is_file():
+        raise ConvertError(f"Input path is not a file: {input_path}")
+
+    try:
+        workbook = load_workbook(input_path, data_only=False)
+        values_workbook = load_workbook(input_path, data_only=True)
+    except (InvalidFileException, BadZipFile, OSError) as error:
+        raise ConvertError(f"Could not read Excel workbook: {error}") from error
+
+    if not workbook.worksheets:
+        raise ConvertError("Workbook does not contain any sheets.")
 
     output = {
         "source_file": input_path.name,
@@ -198,11 +218,21 @@ def main():
     parser.add_argument("output", nargs="?", default="output.json")
     args = parser.parse_args()
 
-    data = convert(args.input)
-    output_path = Path(args.output)
-    output_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    try:
+        data = convert(args.input)
+        output_path = Path(args.output)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    except ConvertError as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
+    except OSError as error:
+        print(f"Error: could not write output file: {error}", file=sys.stderr)
+        return 1
+
     print(f"Wrote {output_path}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

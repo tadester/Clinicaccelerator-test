@@ -18,6 +18,8 @@ python convert.py "Scoreboard Test.xlsx" output.json
 
 Both arguments are optional. If you do not pass them, the script uses `Scoreboard Test.xlsx` and writes `output.json`.
 
+If the input file is missing or cannot be read as an Excel workbook, the script prints a short error message and exits with a non-zero status code.
+
 ## JSON shape
 
 The JSON keeps one entry per sheet. Each sheet has column definitions first, then weekly records:
