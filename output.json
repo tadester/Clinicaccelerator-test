@@ -1,0 +1,2987 @@
+{
+  "source_file": "Scoreboard Test.xlsx",
+  "sheets": [
+    {
+      "name": "SCOREBOARD",
+      "size": {
+        "rows": 10,
+        "columns": 142
+      },
+      "merged_ranges": [
+        "AJ1:AP1"
+      ],
+      "header_rows": {
+        "section": 1,
+        "label": 2,
+        "focus": 3,
+        "source": 4,
+        "role": 5,
+        "target_label": 6,
+        "target": 7
+      },
+      "data_start_row": 8,
+      "columns": [
+        {
+          "id": "week",
+          "kind": "date",
+          "column": "A",
+          "index": 1,
+          "section": null,
+          "label": "\\",
+          "focus": "Focus:",
+          "source": "Source:",
+          "role": "Role:",
+          "target_label": "...+",
+          "target": 6.0
+        },
+        {
+          "id": "total_revenue_all_services_b",
+          "kind": "metric",
+          "column": "B",
+          "index": 2,
+          "section": null,
+          "label": "Total Revenue - All Services",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": "Target",
+          "target": "`"
+        },
+        {
+          "id": "total_product_revenue_all_services_c",
+          "kind": "metric",
+          "column": "C",
+          "index": 3,
+          "section": null,
+          "label": "Total Product Revenue - All Services",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "theraguns_sold_d",
+          "kind": "metric",
+          "column": "D",
+          "index": 4,
+          "section": null,
+          "label": "Theraguns Sold (#)",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pillows_e",
+          "kind": "metric",
+          "column": "E",
+          "index": 5,
+          "section": null,
+          "label": "Pillows",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "custom_knee_brace_f",
+          "kind": "metric",
+          "column": "F",
+          "index": 6,
+          "section": null,
+          "label": "Custom Knee Brace",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "orthotics_g",
+          "kind": "metric",
+          "column": "G",
+          "index": 7,
+          "section": null,
+          "label": "Orthotics",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_payments_all_services_h",
+          "kind": "metric",
+          "column": "H",
+          "index": 8,
+          "section": null,
+          "label": "Total Payments - All Services",
+          "focus": "Collection",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "revenue_collected_4_wk_avg_i",
+          "kind": "metric",
+          "column": "I",
+          "index": 9,
+          "section": null,
+          "label": "Revenue Collected (4 wk avg)",
+          "focus": "Collection",
+          "source": "Ratio",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "ar_90_days_j",
+          "kind": "metric",
+          "column": "J",
+          "index": 10,
+          "section": null,
+          "label": "AR > 90 days",
+          "focus": "Collection",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_ar_k",
+          "kind": "metric",
+          "column": "K",
+          "index": 11,
+          "section": null,
+          "label": "Total AR",
+          "focus": "Collection",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "online_bookings_via_jane_l",
+          "kind": "metric",
+          "column": "L",
+          "index": 12,
+          "section": null,
+          "label": "Online Bookings Via Jane",
+          "focus": "Bookings",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "consult_requests_m",
+          "kind": "metric",
+          "column": "M",
+          "index": 13,
+          "section": null,
+          "label": "Consult Requests",
+          "focus": "Marketing",
+          "source": "Form",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "consults_turned_ax_n",
+          "kind": "metric",
+          "column": "N",
+          "index": 14,
+          "section": null,
+          "label": "Consults turned Ax",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_ax_all_services_o",
+          "kind": "metric",
+          "column": "O",
+          "index": 15,
+          "section": null,
+          "label": "Total Ax - All Services",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "ax_4_week_avg_p",
+          "kind": "metric",
+          "column": "P",
+          "index": 16,
+          "section": null,
+          "label": "Ax 4 Week Avg",
+          "focus": "Marketing",
+          "source": "GS",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "of_rx_clinic_wide_q",
+          "kind": "metric",
+          "column": "Q",
+          "index": 17,
+          "section": null,
+          "label": "# of Rx (Clinic Wide)",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "clinic_pva_r",
+          "kind": "metric",
+          "column": "R",
+          "index": 18,
+          "section": null,
+          "label": "Clinic PVA",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_s",
+          "kind": "spacer",
+          "column": "S",
+          "index": 19,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cross_referral_ax_total_t",
+          "kind": "metric",
+          "column": "T",
+          "index": 20,
+          "section": null,
+          "label": "CROSS REFERRAL AX (Total)",
+          "focus": "Caseload",
+          "source": "NAR",
+          "role": "Nicole",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "column_u_u",
+          "kind": "metric",
+          "column": "U",
+          "index": 21,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "submitted_v",
+          "kind": "metric",
+          "column": "V",
+          "index": 22,
+          "section": null,
+          "label": "Submitted",
+          "focus": "Treatment Plan",
+          "source": "Jane",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "unsubmitted_w",
+          "kind": "metric",
+          "column": "W",
+          "index": 23,
+          "section": null,
+          "label": "Unsubmitted",
+          "focus": "Treatment Plan",
+          "source": "Jane",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_x",
+          "kind": "spacer",
+          "column": "X",
+          "index": 24,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cancelled_total_ax_y",
+          "kind": "metric",
+          "column": "Y",
+          "index": 25,
+          "section": null,
+          "label": "Cancelled Total Ax",
+          "focus": "New Clients",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cancelled_ax_online_z",
+          "kind": "metric",
+          "column": "Z",
+          "index": 26,
+          "section": null,
+          "label": "Cancelled Ax (Online)",
+          "focus": "Online",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cancelled_ax_online_aa",
+          "kind": "metric",
+          "column": "AA",
+          "index": 27,
+          "section": null,
+          "label": "Cancelled Ax Online %",
+          "focus": "Online",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cancelled_online_ax_winback_ab",
+          "kind": "metric",
+          "column": "AB",
+          "index": 28,
+          "section": null,
+          "label": "Cancelled Online Ax WINBACK",
+          "focus": "Online",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "cancellation_ac",
+          "kind": "metric",
+          "column": "AC",
+          "index": 29,
+          "section": null,
+          "label": "Cancellation %",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "of_fall_offs_total_ad",
+          "kind": "metric",
+          "column": "AD",
+          "index": 30,
+          "section": null,
+          "label": "# of Fall Offs (Total)",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "fall_off_called_ae",
+          "kind": "metric",
+          "column": "AE",
+          "index": 31,
+          "section": null,
+          "label": "Fall Off % Called",
+          "focus": "Caseload",
+          "source": "Tracker",
+          "role": "Nicole",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_af",
+          "kind": "spacer",
+          "column": "AF",
+          "index": 32,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "fb_reviews_ag",
+          "kind": "metric",
+          "column": "AG",
+          "index": 33,
+          "section": null,
+          "label": "FB Reviews",
+          "focus": "Marketing",
+          "source": "Facebook",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "google_reviews_ah",
+          "kind": "metric",
+          "column": "AH",
+          "index": 34,
+          "section": null,
+          "label": "Google Reviews",
+          "focus": "Marketing",
+          "source": "Google",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_ai",
+          "kind": "spacer",
+          "column": "AI",
+          "index": 35,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_calls_5530_aj",
+          "kind": "metric",
+          "column": "AJ",
+          "index": 36,
+          "section": "PHONE PERFORMANCE",
+          "label": "Total Calls (5530)",
+          "focus": "Phone",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "missed_calls_ak",
+          "kind": "metric",
+          "column": "AK",
+          "index": 37,
+          "section": "PHONE PERFORMANCE",
+          "label": "Missed Calls",
+          "focus": "Phone",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "answer_rate_al",
+          "kind": "metric",
+          "column": "AL",
+          "index": 38,
+          "section": "PHONE PERFORMANCE",
+          "label": "Answer Rate",
+          "focus": "Answer",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "booking_rate_am",
+          "kind": "metric",
+          "column": "AM",
+          "index": 39,
+          "section": "PHONE PERFORMANCE",
+          "label": "Booking Rate",
+          "focus": "Book",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nbo_an",
+          "kind": "metric",
+          "column": "AN",
+          "index": 40,
+          "section": "PHONE PERFORMANCE",
+          "label": "NBO",
+          "focus": "Phone",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "dnb_ao",
+          "kind": "metric",
+          "column": "AO",
+          "index": 41,
+          "section": "PHONE PERFORMANCE",
+          "label": "DNB",
+          "focus": "Phone",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "winback_ax_only_ap",
+          "kind": "metric",
+          "column": "AP",
+          "index": 42,
+          "section": "PHONE PERFORMANCE",
+          "label": "Winback (Ax Only)",
+          "focus": "Phone",
+          "source": "CallHero",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_aq",
+          "kind": "spacer",
+          "column": "AQ",
+          "index": 43,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nar_collected_at_ax_ar",
+          "kind": "metric",
+          "column": "AR",
+          "index": 44,
+          "section": null,
+          "label": "NAR Collected at Ax",
+          "focus": "Tx Plan",
+          "source": "NAR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nar_collected_at_ax_as",
+          "kind": "metric",
+          "column": "AS",
+          "index": 45,
+          "section": null,
+          "label": "NAR % Collected at Ax",
+          "focus": "Tx Plan",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": "100% Target"
+        },
+        {
+          "id": "average_prescribed_at",
+          "kind": "metric",
+          "column": "AT",
+          "index": 46,
+          "section": null,
+          "label": "Average Prescribed",
+          "focus": "Tx Plan",
+          "source": "NAR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "booked_prescribed_total_au",
+          "kind": "metric",
+          "column": "AU",
+          "index": 47,
+          "section": null,
+          "label": "Booked:Prescribed % (Total)",
+          "focus": "Tx Plan",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": "Target = 75%"
+        },
+        {
+          "id": "of_tx_plan_given_av",
+          "kind": "metric",
+          "column": "AV",
+          "index": 48,
+          "section": null,
+          "label": "# of Tx Plan Given",
+          "focus": "Tx Plan",
+          "source": "NAR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "tx_plan_used_aw",
+          "kind": "metric",
+          "column": "AW",
+          "index": 49,
+          "section": null,
+          "label": "% Tx Plan Used",
+          "focus": "Tx Plan",
+          "source": "NAR",
+          "role": "J",
+          "target_label": null,
+          "target": "Target = 80%"
+        },
+        {
+          "id": "nps_collected_at_ax_ax",
+          "kind": "metric",
+          "column": "AX",
+          "index": 50,
+          "section": null,
+          "label": "NPS Collected at Ax",
+          "focus": "Satisfaction",
+          "source": "NPS",
+          "role": "BETH",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nps_collected_at_ax_ay",
+          "kind": "metric",
+          "column": "AY",
+          "index": 51,
+          "section": null,
+          "label": "NPS % Collected at Ax",
+          "focus": "Satisfaction",
+          "source": "Formula",
+          "role": "BETH",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "follow_up_won_az",
+          "kind": "metric",
+          "column": "AZ",
+          "index": 52,
+          "section": null,
+          "label": "Follow-up won",
+          "focus": "Rapport",
+          "source": {
+            "value": "Tracker",
+            "formula": "=HYPERLINK(\"https://docs.google.com/spreadsheets/d/1s496B9UDR0V6aowT5LYZIpAazEDG9mXXPINFQ_cf1ls/edit?usp=sharing\",\"Tracker\")"
+          },
+          "role": "BETH",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "dropped_clients_won_ba",
+          "kind": "metric",
+          "column": "BA",
+          "index": 53,
+          "section": null,
+          "label": "Dropped Clients won",
+          "focus": "Commitment",
+          "source": {
+            "value": "Tracker",
+            "formula": "=HYPERLINK(\"https://docs.google.com/spreadsheets/d/1rvlKu2jEbKbuiyAycq48R43M4TBOrds5lktcHJHBvik/edit?usp=sharing\",\"Tracker\")"
+          },
+          "role": "BETH",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_bb",
+          "kind": "spacer",
+          "column": "BB",
+          "index": 54,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nar_submission_bc",
+          "kind": "metric",
+          "column": "BC",
+          "index": 55,
+          "section": null,
+          "label": "NAR Submission",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "nar_percentage_bd",
+          "kind": "metric",
+          "column": "BD",
+          "index": 56,
+          "section": null,
+          "label": "NAR Percentage",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_be",
+          "kind": "spacer",
+          "column": "BE",
+          "index": 57,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "shockwave_alone_bf",
+          "kind": "metric",
+          "column": "BF",
+          "index": 58,
+          "section": null,
+          "label": "Shockwave Alone",
+          "focus": null,
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "shockwave_pt_bg",
+          "kind": "metric",
+          "column": "BG",
+          "index": 59,
+          "section": null,
+          "label": "Shockwave + PT",
+          "focus": null,
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_shockwave_revenue_bh",
+          "kind": "metric",
+          "column": "BH",
+          "index": 60,
+          "section": null,
+          "label": "Total Shockwave Revenue",
+          "focus": null,
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_bi",
+          "kind": "spacer",
+          "column": "BI",
+          "index": 61,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_patient_database_bj",
+          "kind": "metric",
+          "column": "BJ",
+          "index": 62,
+          "section": null,
+          "label": "Total Patient Database",
+          "focus": "Beth",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_active_patients_bk",
+          "kind": "metric",
+          "column": "BK",
+          "index": 63,
+          "section": null,
+          "label": "Total Active Patients",
+          "focus": "Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "calls_made_by_other_clinicians_bl",
+          "kind": "metric",
+          "column": "BL",
+          "index": 64,
+          "section": null,
+          "label": "Calls made by Other Clinicians",
+          "focus": "Tracy",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "ahs_active_clients_bm",
+          "kind": "metric",
+          "column": "BM",
+          "index": 65,
+          "section": null,
+          "label": "AHS active clients",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_active_called_bn",
+          "kind": "metric",
+          "column": "BN",
+          "index": 66,
+          "section": null,
+          "label": "Total Active Called",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "discovery_booked_bo",
+          "kind": "metric",
+          "column": "BO",
+          "index": 67,
+          "section": null,
+          "label": "Discovery Booked",
+          "focus": "Tracy",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "md_faxees_sent_bp",
+          "kind": "metric",
+          "column": "BP",
+          "index": 68,
+          "section": null,
+          "label": "MD faxees sent",
+          "focus": "Tracy",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "md_s_called_bq",
+          "kind": "metric",
+          "column": "BQ",
+          "index": 69,
+          "section": null,
+          "label": "MD's called",
+          "focus": "Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "emails_sent_br",
+          "kind": "metric",
+          "column": "BR",
+          "index": 70,
+          "section": null,
+          "label": "Emails Sent",
+          "focus": "Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "open_rate_bs",
+          "kind": "metric",
+          "column": "BS",
+          "index": 71,
+          "section": null,
+          "label": "Open Rate",
+          "focus": "Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "email_responses_bt",
+          "kind": "metric",
+          "column": "BT",
+          "index": 72,
+          "section": null,
+          "label": "Email Responses",
+          "focus": "Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "beth_outgoing_calls_bu",
+          "kind": "metric",
+          "column": "BU",
+          "index": 73,
+          "section": null,
+          "label": "Beth Outgoing Calls",
+          "focus": "Beth",
+          "source": "OBJECTIONS",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "beth_incoming_calls_bv",
+          "kind": "metric",
+          "column": "BV",
+          "index": 74,
+          "section": null,
+          "label": "Beth incoming Calls",
+          "focus": "Beth",
+          "source": "HOOKS",
+          "role": "DISOVERY calls",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "total_calls_bw",
+          "kind": "metric",
+          "column": "BW",
+          "index": 75,
+          "section": null,
+          "label": "Total Calls",
+          "focus": "Beth",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "discovery_call_booked_bx",
+          "kind": "metric",
+          "column": "BX",
+          "index": 76,
+          "section": null,
+          "label": "Discovery Call Booked",
+          "focus": "Beth",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "conversion_by",
+          "kind": "metric",
+          "column": "BY",
+          "index": 77,
+          "section": null,
+          "label": "Conversion",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "discovery_call_delivered_bz",
+          "kind": "metric",
+          "column": "BZ",
+          "index": 78,
+          "section": null,
+          "label": "Discovery Call Delivered",
+          "focus": "Tracy+Paula",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "paid_virtual_delivered_ca",
+          "kind": "metric",
+          "column": "CA",
+          "index": 79,
+          "section": null,
+          "label": "Paid Virtual Delivered",
+          "focus": "Paula",
+          "source": null,
+          "role": "innocare",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "virtual_revenue_cb",
+          "kind": "metric",
+          "column": "CB",
+          "index": 80,
+          "section": null,
+          "label": "Virtual Revenue",
+          "focus": "Beth",
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "visit_cc",
+          "kind": "metric",
+          "column": "CC",
+          "index": 81,
+          "section": null,
+          "label": "$$/Visit",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "conversion_cd",
+          "kind": "metric",
+          "column": "CD",
+          "index": 82,
+          "section": null,
+          "label": "Conversion",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "in_person_visit_ce",
+          "kind": "metric",
+          "column": "CE",
+          "index": 83,
+          "section": null,
+          "label": "In-Person Visit",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_cf",
+          "kind": "spacer",
+          "column": "CF",
+          "index": 84,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "md_f_u_post_vv_tx_calls_cg",
+          "kind": "metric",
+          "column": "CG",
+          "index": 85,
+          "section": null,
+          "label": "MD F/U post VV tx calls",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_ch",
+          "kind": "spacer",
+          "column": "CH",
+          "index": 86,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_ci",
+          "kind": "spacer",
+          "column": "CI",
+          "index": 87,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_total_revenue_cj",
+          "kind": "metric",
+          "column": "CJ",
+          "index": 88,
+          "section": null,
+          "label": "PT Total Revenue",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_ax_ck",
+          "kind": "metric",
+          "column": "CK",
+          "index": 89,
+          "section": null,
+          "label": "PT Ax",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": "Formula"
+        },
+        {
+          "id": "pt_tx_cl",
+          "kind": "metric",
+          "column": "CL",
+          "index": 90,
+          "section": null,
+          "label": "PT Tx",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": {
+            "value": 426,
+            "formula": "=CR7*2"
+          }
+        },
+        {
+          "id": "pt_ahs_ax_cm",
+          "kind": "metric",
+          "column": "CM",
+          "index": 91,
+          "section": null,
+          "label": "PT AHS Ax",
+          "focus": "AHS",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "of_total_ax_ahs_cn",
+          "kind": "metric",
+          "column": "CN",
+          "index": 92,
+          "section": null,
+          "label": "% of Total Ax (AHS)",
+          "focus": "AHS",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_ahs_tx_total_co",
+          "kind": "metric",
+          "column": "CO",
+          "index": 93,
+          "section": null,
+          "label": "PT AHS Tx (Total)",
+          "focus": "AHS",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_ahs_ax_hip_knee_class_cp",
+          "kind": "metric",
+          "column": "CP",
+          "index": 94,
+          "section": null,
+          "label": "PT AHS Ax (Hip&Knee Class)",
+          "focus": "AHS",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_ahs_tx_hip_knee_class_cq",
+          "kind": "metric",
+          "column": "CQ",
+          "index": 95,
+          "section": null,
+          "label": "PT AHS Tx (Hip&Knee Class)",
+          "focus": "AHS",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pva_4_wk_avg_cr",
+          "kind": "metric",
+          "column": "CR",
+          "index": 96,
+          "section": null,
+          "label": "PVA (4 wk avg)",
+          "focus": "Commitment",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": {
+            "value": 213,
+            "formula": "=35+35+38+35+35+35"
+          }
+        },
+        {
+          "id": "pt_available_appts_cs",
+          "kind": "metric",
+          "column": "CS",
+          "index": 97,
+          "section": null,
+          "label": "PT Available appts",
+          "focus": "Caseload",
+          "source": "Estimate",
+          "role": "J",
+          "target_label": null,
+          "target": "Single (2/hr) Team (4/hr )"
+        },
+        {
+          "id": "pt_total_available_hours_total_ct",
+          "kind": "metric",
+          "column": "CT",
+          "index": 98,
+          "section": null,
+          "label": "PT Total Available Hours (Total)",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_total_available_hours_pt_only_cu",
+          "kind": "metric",
+          "column": "CU",
+          "index": 99,
+          "section": null,
+          "label": "PT Total Available Hours (PT only)",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_total_booked_hours_cv",
+          "kind": "metric",
+          "column": "CV",
+          "index": 100,
+          "section": null,
+          "label": "PT Total BOOKED hours",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_arrived_appts_cw",
+          "kind": "metric",
+          "column": "CW",
+          "index": 101,
+          "section": null,
+          "label": "PT Arrived appts",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "utilization_with_kines_cx",
+          "kind": "metric",
+          "column": "CX",
+          "index": 102,
+          "section": null,
+          "label": "Utilization (With Kines)",
+          "focus": "Caseload",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": "Target = 60%"
+        },
+        {
+          "id": "utilization_without_kines_cy",
+          "kind": "metric",
+          "column": "CY",
+          "index": 103,
+          "section": null,
+          "label": "Utilization (Without Kines)",
+          "focus": "Caseload",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pt_tp_given_cz",
+          "kind": "metric",
+          "column": "CZ",
+          "index": 104,
+          "section": null,
+          "label": "PT TP Given",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "tp_utilization_da",
+          "kind": "metric",
+          "column": "DA",
+          "index": 105,
+          "section": null,
+          "label": "TP Utilization",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_db",
+          "kind": "spacer",
+          "column": "DB",
+          "index": 106,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_total_revenue_dc",
+          "kind": "metric",
+          "column": "DC",
+          "index": 107,
+          "section": null,
+          "label": "RMT Total Revenue",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_ax_dd",
+          "kind": "metric",
+          "column": "DD",
+          "index": 108,
+          "section": null,
+          "label": "RMT Ax",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": 3062.5
+        },
+        {
+          "id": "rmt_tx_de",
+          "kind": "metric",
+          "column": "DE",
+          "index": 109,
+          "section": null,
+          "label": "RMT Tx",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pva_4_wk_avg_df",
+          "kind": "metric",
+          "column": "DF",
+          "index": 110,
+          "section": null,
+          "label": "PVA (4 wk avg)",
+          "focus": "Commitment",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_available_slots_dg",
+          "kind": "metric",
+          "column": "DG",
+          "index": 111,
+          "section": null,
+          "label": "RMT Available slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_hours_available_dh",
+          "kind": "metric",
+          "column": "DH",
+          "index": 112,
+          "section": null,
+          "label": "RMT Hours Available",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": "Total Available = 32"
+        },
+        {
+          "id": "rmt_booked_hours_di",
+          "kind": "metric",
+          "column": "DI",
+          "index": 113,
+          "section": null,
+          "label": "RMT BOOKED hours",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_arrived_slots_dj",
+          "kind": "metric",
+          "column": "DJ",
+          "index": 114,
+          "section": null,
+          "label": "RMT Arrived slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "utilization_dk",
+          "kind": "metric",
+          "column": "DK",
+          "index": 115,
+          "section": null,
+          "label": "Utilization",
+          "focus": "Caseload",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "rmt_tp_given_dl",
+          "kind": "metric",
+          "column": "DL",
+          "index": 116,
+          "section": null,
+          "label": "RMT TP Given",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "tp_utilization_dm",
+          "kind": "metric",
+          "column": "DM",
+          "index": 117,
+          "section": null,
+          "label": "TP Utilization",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_dn",
+          "kind": "spacer",
+          "column": "DN",
+          "index": 118,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_total_revenue_do",
+          "kind": "metric",
+          "column": "DO",
+          "index": 119,
+          "section": null,
+          "label": "CHIRO Total Revenue",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_ax_dp",
+          "kind": "metric",
+          "column": "DP",
+          "index": 120,
+          "section": null,
+          "label": "CHIRO Ax",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_tx_dq",
+          "kind": "metric",
+          "column": "DQ",
+          "index": 121,
+          "section": null,
+          "label": "CHIRO Tx",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pva_4_wk_avg_dr",
+          "kind": "metric",
+          "column": "DR",
+          "index": 122,
+          "section": null,
+          "label": "PVA (4 wk avg)",
+          "focus": "Commitment",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_available_slots_ds",
+          "kind": "metric",
+          "column": "DS",
+          "index": 123,
+          "section": null,
+          "label": "CHIRO Available slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_hours_available_dt",
+          "kind": "metric",
+          "column": "DT",
+          "index": 124,
+          "section": null,
+          "label": "Chiro Hours Available",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": "Total Available = 34"
+        },
+        {
+          "id": "chiro_booked_hours_du",
+          "kind": "metric",
+          "column": "DU",
+          "index": 125,
+          "section": null,
+          "label": "Chiro BOOKED hours",
+          "focus": "Caseload",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_arrived_slots_dv",
+          "kind": "metric",
+          "column": "DV",
+          "index": 126,
+          "section": null,
+          "label": "CHIRO Arrived slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "utilization_dw",
+          "kind": "metric",
+          "column": "DW",
+          "index": 127,
+          "section": null,
+          "label": "Utilization",
+          "focus": "Caseload",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "chiro_tp_given_dx",
+          "kind": "metric",
+          "column": "DX",
+          "index": 128,
+          "section": null,
+          "label": "CHIRO TP Given",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "tp_utilization_dy",
+          "kind": "metric",
+          "column": "DY",
+          "index": 129,
+          "section": null,
+          "label": "TP Utilization",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_dz",
+          "kind": "spacer",
+          "column": "DZ",
+          "index": 130,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pelvic_health_total_revenue_ea",
+          "kind": "metric",
+          "column": "EA",
+          "index": 131,
+          "section": null,
+          "label": "Pelvic Health Total Revenue",
+          "focus": "Financial",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pelvic_health_ax_eb",
+          "kind": "metric",
+          "column": "EB",
+          "index": 132,
+          "section": null,
+          "label": "Pelvic Health Ax",
+          "focus": "Marketing",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": "Target = 1"
+        },
+        {
+          "id": "pelvic_health_tx_ec",
+          "kind": "metric",
+          "column": "EC",
+          "index": 133,
+          "section": null,
+          "label": "Pelvic Health Tx",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pva_4_wk_avg_ed",
+          "kind": "metric",
+          "column": "ED",
+          "index": 134,
+          "section": null,
+          "label": "PVA (4 wk avg)",
+          "focus": "Commitment",
+          "source": "Formula",
+          "role": "J",
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_ee",
+          "kind": "spacer",
+          "column": "EE",
+          "index": 135,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "true_pva_average_ef",
+          "kind": "metric",
+          "column": "EF",
+          "index": 136,
+          "section": null,
+          "label": "True PVA Average",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "utilization_eg",
+          "kind": "metric",
+          "column": "EG",
+          "index": 137,
+          "section": null,
+          "label": "Utilization",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "spacer_eh",
+          "kind": "spacer",
+          "column": "EH",
+          "index": 138,
+          "section": null,
+          "label": null,
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pva_average_ei",
+          "kind": "metric",
+          "column": "EI",
+          "index": 139,
+          "section": null,
+          "label": "PVA AVERAGE",
+          "focus": null,
+          "source": null,
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pelvic_health_available_slots_ej",
+          "kind": "metric",
+          "column": "EJ",
+          "index": 140,
+          "section": null,
+          "label": "Pelvic Health Available slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "pelvic_health_arrived_slots_ek",
+          "kind": "metric",
+          "column": "EK",
+          "index": 141,
+          "section": null,
+          "label": "Pelvic Health Arrived slots",
+          "focus": "Commitment",
+          "source": "EMR",
+          "role": null,
+          "target_label": null,
+          "target": null
+        },
+        {
+          "id": "utilization_el",
+          "kind": "metric",
+          "column": "EL",
+          "index": 142,
+          "section": null,
+          "label": "Utilization",
+          "focus": "Caseload",
+          "source": "Formula",
+          "role": null,
+          "target_label": null,
+          "target": null
+        }
+      ],
+      "records": [
+        {
+          "row": 8,
+          "week": "2026-02-16",
+          "values": {
+            "total_revenue_all_services_b": {
+              "column": "B",
+              "label": "Total Revenue - All Services",
+              "value": 40454.28
+            },
+            "total_payments_all_services_h": {
+              "column": "H",
+              "label": "Total Payments - All Services",
+              "value": 48464.61
+            },
+            "revenue_collected_4_wk_avg_i": {
+              "column": "I",
+              "label": "Revenue Collected (4 wk avg)",
+              "value": {
+                "value": 1.00441053,
+                "formula": "=if(B8=\"\",\"Formula\",sum(H8:H10)/sum(B8:B10))"
+              }
+            },
+            "ar_90_days_j": {
+              "column": "J",
+              "label": "AR > 90 days",
+              "value": 0.0
+            },
+            "total_ar_k": {
+              "column": "K",
+              "label": "Total AR",
+              "value": 56578.43
+            },
+            "online_bookings_via_jane_l": {
+              "column": "L",
+              "label": "Online Bookings Via Jane",
+              "value": 36.0
+            },
+            "total_ax_all_services_o": {
+              "column": "O",
+              "label": "Total Ax - All Services",
+              "value": 42.0
+            },
+            "ax_4_week_avg_p": {
+              "column": "P",
+              "label": "Ax 4 Week Avg",
+              "value": {
+                "value": 50.66666667,
+                "formula": "=AVERAGE(O8:O10)"
+              }
+            },
+            "of_rx_clinic_wide_q": {
+              "column": "Q",
+              "label": "# of Rx (Clinic Wide)",
+              "value": {
+                "value": 377,
+                "formula": "=450-19-54"
+              }
+            },
+            "clinic_pva_r": {
+              "column": "R",
+              "label": "Clinic PVA",
+              "value": {
+                "value": 7.440789474,
+                "formula": "=Q8/P8"
+              }
+            },
+            "column_u_u": {
+              "column": "U",
+              "label": null,
+              "value": 498.0
+            },
+            "submitted_v": {
+              "column": "V",
+              "label": "Submitted",
+              "value": 498.0
+            },
+            "unsubmitted_w": {
+              "column": "W",
+              "label": "Unsubmitted",
+              "value": 100.0
+            },
+            "cancelled_total_ax_y": {
+              "column": "Y",
+              "label": "Cancelled Total Ax",
+              "value": 14.0
+            },
+            "cancelled_ax_online_z": {
+              "column": "Z",
+              "label": "Cancelled Ax (Online)",
+              "value": 0.0
+            },
+            "cancelled_ax_online_aa": {
+              "column": "AA",
+              "label": "Cancelled Ax Online %",
+              "value": 0.0
+            },
+            "cancellation_ac": {
+              "column": "AC",
+              "label": "Cancellation %",
+              "value": {
+                "value": 0.1707317073,
+                "formula": "=77/(77+374)"
+              }
+            },
+            "google_reviews_ah": {
+              "column": "AH",
+              "label": "Google Reviews",
+              "value": 1227.0
+            },
+            "total_calls_5530_aj": {
+              "column": "AJ",
+              "label": "Total Calls (5530)",
+              "value": 255.0
+            },
+            "missed_calls_ak": {
+              "column": "AK",
+              "label": "Missed Calls",
+              "value": 17.0
+            },
+            "answer_rate_al": {
+              "column": "AL",
+              "label": "Answer Rate",
+              "value": 0.93
+            },
+            "booking_rate_am": {
+              "column": "AM",
+              "label": "Booking Rate",
+              "value": 0.69
+            },
+            "nbo_an": {
+              "column": "AN",
+              "label": "NBO",
+              "value": 26.0
+            },
+            "dnb_ao": {
+              "column": "AO",
+              "label": "DNB",
+              "value": 8.0
+            },
+            "winback_ax_only_ap": {
+              "column": "AP",
+              "label": "Winback (Ax Only)",
+              "value": 0.0
+            },
+            "nar_collected_at_ax_ar": {
+              "column": "AR",
+              "label": "NAR Collected at Ax",
+              "value": 39.0
+            },
+            "nar_collected_at_ax_as": {
+              "column": "AS",
+              "label": "NAR % Collected at Ax",
+              "value": {
+                "value": 0.9285714286,
+                "formula": "=AR8/O8"
+              }
+            },
+            "average_prescribed_at": {
+              "column": "AT",
+              "label": "Average Prescribed",
+              "value": "2.87"
+            },
+            "booked_prescribed_total_au": {
+              "column": "AU",
+              "label": "Booked:Prescribed % (Total)",
+              "value": {
+                "value": 0.5357142857,
+                "formula": "=60/112"
+              }
+            },
+            "of_tx_plan_given_av": {
+              "column": "AV",
+              "label": "# of Tx Plan Given",
+              "value": 20.0
+            },
+            "tx_plan_used_aw": {
+              "column": "AW",
+              "label": "% Tx Plan Used",
+              "value": {
+                "value": 0.4761904762,
+                "formula": "=AV8/O8"
+              }
+            }
+          }
+        },
+        {
+          "row": 9,
+          "week": "2026-02-09",
+          "values": {
+            "total_revenue_all_services_b": {
+              "column": "B",
+              "label": "Total Revenue - All Services",
+              "value": 42360.64
+            },
+            "total_payments_all_services_h": {
+              "column": "H",
+              "label": "Total Payments - All Services",
+              "value": 34022.04
+            },
+            "revenue_collected_4_wk_avg_i": {
+              "column": "I",
+              "label": "Revenue Collected (4 wk avg)",
+              "value": {
+                "value": 0.9083875359,
+                "formula": "=if(B9=\"\",\"Formula\",sum(H9:H10)/sum(B9:B10))"
+              }
+            },
+            "ar_90_days_j": {
+              "column": "J",
+              "label": "AR > 90 days",
+              "value": 182.0
+            },
+            "total_ar_k": {
+              "column": "K",
+              "label": "Total AR",
+              "value": 65386.72
+            },
+            "online_bookings_via_jane_l": {
+              "column": "L",
+              "label": "Online Bookings Via Jane",
+              "value": 45.0
+            },
+            "total_ax_all_services_o": {
+              "column": "O",
+              "label": "Total Ax - All Services",
+              "value": 54.0
+            },
+            "ax_4_week_avg_p": {
+              "column": "P",
+              "label": "Ax 4 Week Avg",
+              "value": {
+                "value": 55,
+                "formula": "=AVERAGE(O9:O10)"
+              }
+            },
+            "of_rx_clinic_wide_q": {
+              "column": "Q",
+              "label": "# of Rx (Clinic Wide)",
+              "value": {
+                "value": 377,
+                "formula": "=450-19-54"
+              }
+            },
+            "clinic_pva_r": {
+              "column": "R",
+              "label": "Clinic PVA",
+              "value": {
+                "value": 6.854545455,
+                "formula": "=Q9/P9"
+              }
+            },
+            "submitted_v": {
+              "column": "V",
+              "label": "Submitted",
+              "value": 669.0
+            },
+            "unsubmitted_w": {
+              "column": "W",
+              "label": "Unsubmitted",
+              "value": 129.0
+            },
+            "cancelled_total_ax_y": {
+              "column": "Y",
+              "label": "Cancelled Total Ax",
+              "value": 8.0
+            },
+            "cancelled_ax_online_z": {
+              "column": "Z",
+              "label": "Cancelled Ax (Online)",
+              "value": 0.0
+            },
+            "cancelled_ax_online_aa": {
+              "column": "AA",
+              "label": "Cancelled Ax Online %",
+              "value": 0.0
+            },
+            "cancellation_ac": {
+              "column": "AC",
+              "label": "Cancellation %",
+              "value": {
+                "value": 0.1149897331,
+                "formula": "=56/(56+431)"
+              }
+            },
+            "of_fall_offs_total_ad": {
+              "column": "AD",
+              "label": "# of Fall Offs (Total)",
+              "value": 113.0
+            },
+            "fb_reviews_ag": {
+              "column": "AG",
+              "label": "FB Reviews",
+              "value": 0.0
+            },
+            "google_reviews_ah": {
+              "column": "AH",
+              "label": "Google Reviews",
+              "value": 1224.0
+            },
+            "total_calls_5530_aj": {
+              "column": "AJ",
+              "label": "Total Calls (5530)",
+              "value": 281.0
+            },
+            "missed_calls_ak": {
+              "column": "AK",
+              "label": "Missed Calls",
+              "value": 15.0
+            },
+            "answer_rate_al": {
+              "column": "AL",
+              "label": "Answer Rate",
+              "value": 0.94
+            },
+            "booking_rate_am": {
+              "column": "AM",
+              "label": "Booking Rate",
+              "value": 0.73
+            },
+            "nbo_an": {
+              "column": "AN",
+              "label": "NBO",
+              "value": 26.0
+            },
+            "dnb_ao": {
+              "column": "AO",
+              "label": "DNB",
+              "value": 7.0
+            },
+            "winback_ax_only_ap": {
+              "column": "AP",
+              "label": "Winback (Ax Only)",
+              "value": 0.0
+            },
+            "nar_collected_at_ax_ar": {
+              "column": "AR",
+              "label": "NAR Collected at Ax",
+              "value": 56.0
+            },
+            "nar_collected_at_ax_as": {
+              "column": "AS",
+              "label": "NAR % Collected at Ax",
+              "value": {
+                "value": 1.037037037,
+                "formula": "=AR9/O9"
+              }
+            },
+            "average_prescribed_at": {
+              "column": "AT",
+              "label": "Average Prescribed",
+              "value": "3.26"
+            },
+            "booked_prescribed_total_au": {
+              "column": "AU",
+              "label": "Booked:Prescribed % (Total)",
+              "value": {
+                "value": 0.5433526012,
+                "formula": "=94/173"
+              }
+            },
+            "of_tx_plan_given_av": {
+              "column": "AV",
+              "label": "# of Tx Plan Given",
+              "value": 30.0
+            },
+            "tx_plan_used_aw": {
+              "column": "AW",
+              "label": "% Tx Plan Used",
+              "value": {
+                "value": 0.5555555556,
+                "formula": "=AV9/O9"
+              }
+            },
+            "pt_total_revenue_cj": {
+              "column": "CJ",
+              "label": "PT Total Revenue",
+              "value": 36099.38
+            },
+            "pt_ax_ck": {
+              "column": "CK",
+              "label": "PT Ax",
+              "value": 47.0
+            },
+            "pt_tx_cl": {
+              "column": "CL",
+              "label": "PT Tx",
+              "value": {
+                "value": 319,
+                "formula": "=382-16-47"
+              }
+            },
+            "pt_ahs_ax_cm": {
+              "column": "CM",
+              "label": "PT AHS Ax",
+              "value": 10.0
+            },
+            "of_total_ax_ahs_cn": {
+              "column": "CN",
+              "label": "% of Total Ax (AHS)",
+              "value": {
+                "value": 0.2127659574,
+                "formula": "=CM9/CK9"
+              }
+            },
+            "pt_ahs_tx_total_co": {
+              "column": "CO",
+              "label": "PT AHS Tx (Total)",
+              "value": 37.0
+            },
+            "pt_ahs_ax_hip_knee_class_cp": {
+              "column": "CP",
+              "label": "PT AHS Ax (Hip&Knee Class)",
+              "value": 5.0
+            },
+            "pt_ahs_tx_hip_knee_class_cq": {
+              "column": "CQ",
+              "label": "PT AHS Tx (Hip&Knee Class)",
+              "value": 5.0
+            },
+            "pva_4_wk_avg_cr": {
+              "column": "CR",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 6.434782609,
+                "formula": "=sum(CL9:CL10)/sum(CK9:CK10)"
+              }
+            },
+            "pt_total_available_hours_total_ct": {
+              "column": "CT",
+              "label": "PT Total Available Hours (Total)",
+              "value": {
+                "value": 290.25,
+                "formula": "=338\n-47.75"
+              }
+            },
+            "pt_total_available_hours_pt_only_cu": {
+              "column": "CU",
+              "label": "PT Total Available Hours (PT only)",
+              "value": {
+                "value": 172.5,
+                "formula": "=189.25\n-16.75"
+              }
+            },
+            "pt_total_booked_hours_cv": {
+              "column": "CV",
+              "label": "PT Total BOOKED hours",
+              "value": 166.75
+            },
+            "pt_arrived_appts_cw": {
+              "column": "CW",
+              "label": "PT Arrived appts",
+              "value": 382.0
+            },
+            "utilization_with_kines_cx": {
+              "column": "CX",
+              "label": "Utilization (With Kines)",
+              "value": {
+                "value": 0.5745047373,
+                "formula": "=CV9/CT9"
+              }
+            },
+            "utilization_without_kines_cy": {
+              "column": "CY",
+              "label": "Utilization (Without Kines)",
+              "value": {
+                "value": 0.9666666667,
+                "formula": "=CV9/CU9"
+              }
+            },
+            "pt_tp_given_cz": {
+              "column": "CZ",
+              "label": "PT TP Given",
+              "value": 30.0
+            },
+            "tp_utilization_da": {
+              "column": "DA",
+              "label": "TP Utilization",
+              "value": {
+                "value": 0.6382978723,
+                "formula": "=CZ9/CK9"
+              }
+            },
+            "rmt_total_revenue_dc": {
+              "column": "DC",
+              "label": "RMT Total Revenue",
+              "value": 355.0
+            },
+            "rmt_ax_dd": {
+              "column": "DD",
+              "label": "RMT Ax",
+              "value": 1.0
+            },
+            "rmt_tx_de": {
+              "column": "DE",
+              "label": "RMT Tx",
+              "value": 2.0
+            },
+            "pva_4_wk_avg_df": {
+              "column": "DF",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 2.333333333,
+                "formula": "=if(DD9=\"\",\"Formula\",sum(DE9:DE10)/sum(DD9:DD10))"
+              }
+            },
+            "rmt_hours_available_dh": {
+              "column": "DH",
+              "label": "RMT Hours Available",
+              "value": 3.75
+            },
+            "rmt_booked_hours_di": {
+              "column": "DI",
+              "label": "RMT BOOKED hours",
+              "value": 4.0
+            },
+            "rmt_arrived_slots_dj": {
+              "column": "DJ",
+              "label": "RMT Arrived slots",
+              "value": 3.0
+            },
+            "utilization_dk": {
+              "column": "DK",
+              "label": "Utilization",
+              "value": {
+                "value": 1.066666667,
+                "formula": "=DI9/DH9"
+              }
+            },
+            "rmt_tp_given_dl": {
+              "column": "DL",
+              "label": "RMT TP Given",
+              "value": 0.0
+            },
+            "tp_utilization_dm": {
+              "column": "DM",
+              "label": "TP Utilization",
+              "value": 0.0
+            },
+            "chiro_total_revenue_do": {
+              "column": "DO",
+              "label": "CHIRO Total Revenue",
+              "value": 4458.9
+            },
+            "chiro_ax_dp": {
+              "column": "DP",
+              "label": "CHIRO Ax",
+              "value": 4.0
+            },
+            "chiro_tx_dq": {
+              "column": "DQ",
+              "label": "CHIRO Tx",
+              "value": {
+                "value": 48,
+                "formula": "=55-7"
+              }
+            },
+            "pva_4_wk_avg_dr": {
+              "column": "DR",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 10.2,
+                "formula": "=sum(DQ9:DQ10)/sum(DP9:DP10)"
+              }
+            },
+            "chiro_hours_available_dt": {
+              "column": "DT",
+              "label": "Chiro Hours Available",
+              "value": {
+                "value": 28.25,
+                "formula": "=31\n-2.75"
+              }
+            },
+            "chiro_booked_hours_du": {
+              "column": "DU",
+              "label": "Chiro BOOKED hours",
+              "value": 25.25
+            },
+            "chiro_arrived_slots_dv": {
+              "column": "DV",
+              "label": "CHIRO Arrived slots",
+              "value": 55.0
+            },
+            "utilization_dw": {
+              "column": "DW",
+              "label": "Utilization",
+              "value": {
+                "value": 0.8938053097,
+                "formula": "=DU9/DT9"
+              }
+            },
+            "chiro_tp_given_dx": {
+              "column": "DX",
+              "label": "CHIRO TP Given",
+              "value": 0.0
+            },
+            "tp_utilization_dy": {
+              "column": "DY",
+              "label": "TP Utilization",
+              "value": 0.0
+            },
+            "pelvic_health_total_revenue_ea": {
+              "column": "EA",
+              "label": "Pelvic Health Total Revenue",
+              "value": 2355.0
+            },
+            "pelvic_health_ax_eb": {
+              "column": "EB",
+              "label": "Pelvic Health Ax",
+              "value": 2.0
+            },
+            "pelvic_health_tx_ec": {
+              "column": "EC",
+              "label": "Pelvic Health Tx",
+              "value": 17.0
+            },
+            "pva_4_wk_avg_ed": {
+              "column": "ED",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 1.5,
+                "formula": "=if(EB10=\"\",\"Formula\",sum(EC10)/sum(EB10))"
+              }
+            },
+            "true_pva_average_ef": {
+              "column": "EF",
+              "label": "True PVA Average",
+              "value": {
+                "value": 6.522522523,
+                "formula": "=sum(CL9:CL10,DE9:DE10,DQ9:DQ10,EC9:EC10)/sum(CK9:CK10,DD9:DD10,DP9:DP10,EB9:EB10)"
+              }
+            },
+            "utilization_eg": {
+              "column": "EG",
+              "label": "Utilization",
+              "value": {
+                "value": 0.8449922379,
+                "formula": "=AVERAGE(DW9,DK9,CX9)"
+              }
+            }
+          }
+        },
+        {
+          "row": 10,
+          "week": "2026-02-02",
+          "values": {
+            "total_revenue_all_services_b": {
+              "column": "B",
+              "label": "Total Revenue - All Services",
+              "value": 39202.17
+            },
+            "total_payments_all_services_h": {
+              "column": "H",
+              "label": "Total Payments - All Services",
+              "value": 40068.6
+            },
+            "revenue_collected_4_wk_avg_i": {
+              "column": "I",
+              "label": "Revenue Collected (4 wk avg)",
+              "value": {
+                "value": 1.022101583,
+                "formula": "=if(B10=\"\",\"Formula\",sum(H10)/sum(B10))"
+              }
+            },
+            "ar_90_days_j": {
+              "column": "J",
+              "label": "AR > 90 days",
+              "value": 60.0
+            },
+            "total_ar_k": {
+              "column": "K",
+              "label": "Total AR",
+              "value": 57239.65
+            },
+            "online_bookings_via_jane_l": {
+              "column": "L",
+              "label": "Online Bookings Via Jane",
+              "value": 43.0
+            },
+            "total_ax_all_services_o": {
+              "column": "O",
+              "label": "Total Ax - All Services",
+              "value": 56.0
+            },
+            "ax_4_week_avg_p": {
+              "column": "P",
+              "label": "Ax 4 Week Avg",
+              "value": {
+                "value": 56,
+                "formula": "=AVERAGE(O10)"
+              }
+            },
+            "of_rx_clinic_wide_q": {
+              "column": "Q",
+              "label": "# of Rx (Clinic Wide)",
+              "value": {
+                "value": 340,
+                "formula": "=412-15-57"
+              }
+            },
+            "clinic_pva_r": {
+              "column": "R",
+              "label": "Clinic PVA",
+              "value": {
+                "value": 6.071428571,
+                "formula": "=Q10/P10"
+              }
+            },
+            "submitted_v": {
+              "column": "V",
+              "label": "Submitted",
+              "value": 599.0
+            },
+            "unsubmitted_w": {
+              "column": "W",
+              "label": "Unsubmitted",
+              "value": 44.0
+            },
+            "cancelled_total_ax_y": {
+              "column": "Y",
+              "label": "Cancelled Total Ax",
+              "value": 9.0
+            },
+            "cancelled_ax_online_z": {
+              "column": "Z",
+              "label": "Cancelled Ax (Online)",
+              "value": 0.0
+            },
+            "cancelled_ax_online_aa": {
+              "column": "AA",
+              "label": "Cancelled Ax Online %",
+              "value": 0.0
+            },
+            "cancellation_ac": {
+              "column": "AC",
+              "label": "Cancellation %",
+              "value": {
+                "value": 0.1236203091,
+                "formula": "=56/(56+397)"
+              }
+            },
+            "of_fall_offs_total_ad": {
+              "column": "AD",
+              "label": "# of Fall Offs (Total)",
+              "value": 103.0
+            },
+            "fb_reviews_ag": {
+              "column": "AG",
+              "label": "FB Reviews",
+              "value": 0.0
+            },
+            "google_reviews_ah": {
+              "column": "AH",
+              "label": "Google Reviews",
+              "value": 1217.0
+            },
+            "total_calls_5530_aj": {
+              "column": "AJ",
+              "label": "Total Calls (5530)",
+              "value": 282.0
+            },
+            "missed_calls_ak": {
+              "column": "AK",
+              "label": "Missed Calls",
+              "value": 16.0
+            },
+            "answer_rate_al": {
+              "column": "AL",
+              "label": "Answer Rate",
+              "value": 0.94
+            },
+            "booking_rate_am": {
+              "column": "AM",
+              "label": "Booking Rate",
+              "value": 0.78
+            },
+            "nbo_an": {
+              "column": "AN",
+              "label": "NBO",
+              "value": 33.0
+            },
+            "dnb_ao": {
+              "column": "AO",
+              "label": "DNB",
+              "value": 7.0
+            },
+            "winback_ax_only_ap": {
+              "column": "AP",
+              "label": "Winback (Ax Only)",
+              "value": 2.0
+            },
+            "nar_collected_at_ax_ar": {
+              "column": "AR",
+              "label": "NAR Collected at Ax",
+              "value": 56.0
+            },
+            "nar_collected_at_ax_as": {
+              "column": "AS",
+              "label": "NAR % Collected at Ax",
+              "value": {
+                "value": 1,
+                "formula": "=AR10/O10"
+              }
+            },
+            "average_prescribed_at": {
+              "column": "AT",
+              "label": "Average Prescribed",
+              "value": "3.35"
+            },
+            "booked_prescribed_total_au": {
+              "column": "AU",
+              "label": "Booked:Prescribed % (Total)",
+              "value": {
+                "value": 0.5303867403,
+                "formula": "=96/181"
+              }
+            },
+            "of_tx_plan_given_av": {
+              "column": "AV",
+              "label": "# of Tx Plan Given",
+              "value": 38.0
+            },
+            "tx_plan_used_aw": {
+              "column": "AW",
+              "label": "% Tx Plan Used",
+              "value": {
+                "value": 0.6785714286,
+                "formula": "=AV10/O10"
+              }
+            },
+            "pt_total_revenue_cj": {
+              "column": "CJ",
+              "label": "PT Total Revenue",
+              "value": 30394.0
+            },
+            "pt_ax_ck": {
+              "column": "CK",
+              "label": "PT Ax",
+              "value": 45.0
+            },
+            "pt_tx_cl": {
+              "column": "CL",
+              "label": "PT Tx",
+              "value": {
+                "value": 273,
+                "formula": "=329-11-45"
+              }
+            },
+            "pt_ahs_ax_cm": {
+              "column": "CM",
+              "label": "PT AHS Ax",
+              "value": 11.0
+            },
+            "of_total_ax_ahs_cn": {
+              "column": "CN",
+              "label": "% of Total Ax (AHS)",
+              "value": {
+                "value": 0.2444444444,
+                "formula": "=CM10/CK10"
+              }
+            },
+            "pt_ahs_tx_total_co": {
+              "column": "CO",
+              "label": "PT AHS Tx (Total)",
+              "value": 37.0
+            },
+            "pt_ahs_ax_hip_knee_class_cp": {
+              "column": "CP",
+              "label": "PT AHS Ax (Hip&Knee Class)",
+              "value": 2.0
+            },
+            "pt_ahs_tx_hip_knee_class_cq": {
+              "column": "CQ",
+              "label": "PT AHS Tx (Hip&Knee Class)",
+              "value": 6.0
+            },
+            "pva_4_wk_avg_cr": {
+              "column": "CR",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 6.066666667,
+                "formula": "=sum(CL10)/sum(CK10)"
+              }
+            },
+            "pt_total_available_hours_total_ct": {
+              "column": "CT",
+              "label": "PT Total Available Hours (Total)",
+              "value": {
+                "value": 273.5,
+                "formula": "=313.25\n-39.75"
+              }
+            },
+            "pt_total_available_hours_pt_only_cu": {
+              "column": "CU",
+              "label": "PT Total Available Hours (PT only)",
+              "value": {
+                "value": 139.25,
+                "formula": "=153.5\n-14.25"
+              }
+            },
+            "pt_total_booked_hours_cv": {
+              "column": "CV",
+              "label": "PT Total BOOKED hours",
+              "value": 138.0
+            },
+            "pt_arrived_appts_cw": {
+              "column": "CW",
+              "label": "PT Arrived appts",
+              "value": 329.0
+            },
+            "utilization_with_kines_cx": {
+              "column": "CX",
+              "label": "Utilization (With Kines)",
+              "value": {
+                "value": 0.5045703839,
+                "formula": "=CV10/CT10"
+              }
+            },
+            "utilization_without_kines_cy": {
+              "column": "CY",
+              "label": "Utilization (Without Kines)",
+              "value": {
+                "value": 0.9910233393,
+                "formula": "=CV10/CU10"
+              }
+            },
+            "pt_tp_given_cz": {
+              "column": "CZ",
+              "label": "PT TP Given",
+              "value": 38.0
+            },
+            "tp_utilization_da": {
+              "column": "DA",
+              "label": "TP Utilization",
+              "value": {
+                "value": 0.8444444444,
+                "formula": "=CZ10/CK10"
+              }
+            },
+            "rmt_total_revenue_dc": {
+              "column": "DC",
+              "label": "RMT Total Revenue",
+              "value": 775.5
+            },
+            "rmt_ax_dd": {
+              "column": "DD",
+              "label": "RMT Ax",
+              "value": 2.0
+            },
+            "rmt_tx_de": {
+              "column": "DE",
+              "label": "RMT Tx",
+              "value": 5.0
+            },
+            "pva_4_wk_avg_df": {
+              "column": "DF",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 2.5,
+                "formula": "=if(DD10=\"\",\"Formula\",sum(DE10)/sum(DD10))"
+              }
+            },
+            "rmt_hours_available_dh": {
+              "column": "DH",
+              "label": "RMT Hours Available",
+              "value": {
+                "value": 8,
+                "formula": "=8.5\n-0.5"
+              }
+            },
+            "rmt_booked_hours_di": {
+              "column": "DI",
+              "label": "RMT BOOKED hours",
+              "value": 8.75
+            },
+            "rmt_arrived_slots_dj": {
+              "column": "DJ",
+              "label": "RMT Arrived slots",
+              "value": 7.0
+            },
+            "utilization_dk": {
+              "column": "DK",
+              "label": "Utilization",
+              "value": {
+                "value": 1.09375,
+                "formula": "=DI10/DH10"
+              }
+            },
+            "rmt_tp_given_dl": {
+              "column": "DL",
+              "label": "RMT TP Given",
+              "value": 0.0
+            },
+            "tp_utilization_dm": {
+              "column": "DM",
+              "label": "TP Utilization",
+              "value": 0.0
+            },
+            "chiro_total_revenue_do": {
+              "column": "DO",
+              "label": "CHIRO Total Revenue",
+              "value": 5649.9
+            },
+            "chiro_ax_dp": {
+              "column": "DP",
+              "label": "CHIRO Ax",
+              "value": 6.0
+            },
+            "chiro_tx_dq": {
+              "column": "DQ",
+              "label": "CHIRO Tx",
+              "value": {
+                "value": 54,
+                "formula": "=62-8"
+              }
+            },
+            "pva_4_wk_avg_dr": {
+              "column": "DR",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": 9,
+                "formula": "=sum(DQ10)/sum(DP10)"
+              }
+            },
+            "chiro_hours_available_dt": {
+              "column": "DT",
+              "label": "Chiro Hours Available",
+              "value": {
+                "value": 35.25,
+                "formula": "=37.5\n-2.25"
+              }
+            },
+            "chiro_booked_hours_du": {
+              "column": "DU",
+              "label": "Chiro BOOKED hours",
+              "value": 30.75
+            },
+            "chiro_arrived_slots_dv": {
+              "column": "DV",
+              "label": "CHIRO Arrived slots",
+              "value": 62.0
+            },
+            "utilization_dw": {
+              "column": "DW",
+              "label": "Utilization",
+              "value": {
+                "value": 0.8723404255,
+                "formula": "=DU10/DT10"
+              }
+            },
+            "chiro_tp_given_dx": {
+              "column": "DX",
+              "label": "CHIRO TP Given",
+              "value": 0.0
+            },
+            "tp_utilization_dy": {
+              "column": "DY",
+              "label": "TP Utilization",
+              "value": 0.0
+            },
+            "pelvic_health_total_revenue_ea": {
+              "column": "EA",
+              "label": "Pelvic Health Total Revenue",
+              "value": 1215.0
+            },
+            "pelvic_health_ax_eb": {
+              "column": "EB",
+              "label": "Pelvic Health Ax",
+              "value": 4.0
+            },
+            "pelvic_health_tx_ec": {
+              "column": "EC",
+              "label": "Pelvic Health Tx",
+              "value": 6.0
+            },
+            "pva_4_wk_avg_ed": {
+              "column": "ED",
+              "label": "PVA (4 wk avg)",
+              "value": {
+                "value": "#REF!",
+                "formula": "=if(#REF!=\"\",\"Formula\",sum(#REF!)/sum(#REF!))"
+              }
+            },
+            "true_pva_average_ef": {
+              "column": "EF",
+              "label": "True PVA Average",
+              "value": {
+                "value": 5.929824561,
+                "formula": "=sum(CL10,DE10,DQ10,EC10)/sum(CK10,DD10,DP10,EB10)"
+              }
+            },
+            "utilization_eg": {
+              "column": "EG",
+              "label": "Utilization",
+              "value": {
+                "value": 0.8235536031,
+                "formula": "=AVERAGE(DW10,DK10,CX10)"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
