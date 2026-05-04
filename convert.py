@@ -25,6 +25,7 @@ DATA_START_ROW = 8
 
 
 class ConvertError(Exception):
+    # Keeps command-line errors readable without hiding where they came from.
     pass
 
 
@@ -52,6 +53,7 @@ def json_value(value):
 def make_id(text, col_letter):
     text = clean_text(text) or f"column {col_letter}"
     slug = re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
+    # The column letter avoids collisions for repeated labels like "Utilization".
     return f"{slug}_{col_letter.lower()}"
 
 
@@ -64,6 +66,8 @@ def merged_lookup(sheet):
         anchor = clean_text(anchor)
         ranges.append(str(cell_range))
 
+        # Merged cells only store the value on the top-left cell, so copy it into
+        # a small lookup table for easier header reads later.
         for row in range(cell_range.min_row, cell_range.max_row + 1):
             for col in range(cell_range.min_col, cell_range.max_col + 1):
                 lookup[(row, col)] = anchor
@@ -82,6 +86,8 @@ def read_cell(sheet, values_sheet, row, col, merge_values):
         value = merge_values.get((row, col))
 
     if isinstance(formula, str) and formula.startswith("="):
+        # Keep both pieces: cached values are useful for dashboards, formulas are
+        # useful when someone needs to audit where a number came from.
         return {
             "value": json_value(value),
             "formula": formula,
@@ -113,6 +119,7 @@ def build_columns(sheet, values_sheet, merge_values):
             kind = "metric"
             metric_id = make_id(label_text, letter)
         else:
+            # Empty spacer columns still matter for preserving the original layout.
             kind = "spacer"
             metric_id = f"spacer_{letter.lower()}"
 
